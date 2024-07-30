@@ -1,0 +1,40 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 70px 1fr;
+
+	min-height: 100vh;
+	overflow: scroll;
+}
+
+header {
+	background-color: rgb(20, 21, 45);
+}
+
+#content {
+	grid-row: 2/3;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url("../assets/restaurant.jpg");
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	color: white;
+
+	h1 {
+		font-size: 100px;
+		font-weight: 900;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 28px;
+	}
+}
