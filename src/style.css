@@ -17,8 +17,6 @@ header {
 
 #content {
 	grid-row: 2/3;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-		url("../assets/restaurant.jpg");
 
 	display: flex;
 	flex-direction: column;
@@ -37,4 +35,9 @@ header {
 	p {
 		font-size: 28px;
 	}
+}
+
+.bg-restaurant {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+		url("../assets/restaurant.jpg");
 }
