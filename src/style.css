@@ -16,6 +16,38 @@ body {
 
 header {
 	background-color: rgb(20, 21, 45);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	box-shadow: 0 2px 24px 8px rgba(255, 255, 255, 0.15);
+
+	/* needed for shadows for some reason */
+	z-index: 1;
+}
+
+header button {
+	height: 100%;
+
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+
+	padding: 10px;
+	margin-right: 48px;
+
+	font-size: 30px;
+
+	cursor: pointer;
+}
+
+header button:hover {
+	background-color: black;
+	color: white;
+}
+
+header:last-child {
+	margin-right: 0;
 }
 
 #content {
@@ -27,7 +59,7 @@ header {
 	color: white;
 }
 
-.header {
+.home-header {
 	font-size: 100px;
 	font-weight: 900;
 	font-style: italic;
