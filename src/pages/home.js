@@ -1,7 +1,7 @@
 import { createElement } from "../util";
 
 export default function Home() {
-	const container = createElement("div");
+	const container = createElement("div", "", ["main"]);
 	const header = createElement("h1", "Packed Restaurant", ["header"]);
 	const subHeader = createElement(
 		"p",
@@ -9,7 +9,6 @@ export default function Home() {
 		["sub-header"]
 	);
 
-	container.classList.add("bg-restaurant");
 	container.appendChild(header);
 	container.appendChild(subHeader);
 

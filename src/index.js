@@ -34,3 +34,17 @@ function setContent(newPage) {
 			break;
 	}
 }
+
+/* Event Handling */
+document
+	.getElementById("home-btn")
+	.addEventListener("click", () => setContent(PAGES.HOME));
+document
+	.getElementById("menu-btn")
+	.addEventListener("click", () => setContent(PAGES.MENU));
+document
+	.getElementById("about-btn")
+	.addEventListener("click", () => setContent(PAGES.ABOUT));
+
+// start at home
+setContent(PAGES.HOME);
