@@ -24,17 +24,17 @@ header {
 	align-items: center;
 
 	color: white;
+}
 
-	h1 {
-		font-size: 100px;
-		font-weight: 900;
-		font-style: italic;
-		text-transform: uppercase;
-	}
+.header {
+	font-size: 100px;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+}
 
-	p {
-		font-size: 28px;
-	}
+.sub-header {
+	font-size: 28px;
 }
 
 .bg-restaurant {
