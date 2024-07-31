@@ -1,7 +1,7 @@
-import { createElement } from "../util";
+import { createElement, createMainElement } from "../util";
 
 export default function Home() {
-	const container = createElement("div", "", ["main"]);
+	const container = createMainElement();
 	const header = createElement("h1", "Packed Restaurant", ["header"]);
 	const subHeader = createElement(
 		"p",

@@ -1,7 +1,7 @@
-import { createElement } from "../util";
+import { createElement, createMainElement } from "../util";
 
 export default function Menu() {
-	const container = createElement("div", "", ["main"]);
+	const container = createMainElement();
 
 	return container;
 }

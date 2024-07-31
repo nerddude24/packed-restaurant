@@ -6,4 +6,8 @@ function createElement(tag, text = "", classes = []) {
 	return el;
 }
 
-export { createElement };
+function createMainElement() {
+	return createElement("div", "", ["main"]);
+}
+
+export { createElement, createMainElement };
