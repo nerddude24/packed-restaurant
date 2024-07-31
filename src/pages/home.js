@@ -11,6 +11,8 @@ export default function Home() {
 
 	container.appendChild(header);
 	container.appendChild(subHeader);
+	
+	container.classList.add("flex-center");
 
 	return container;
 }

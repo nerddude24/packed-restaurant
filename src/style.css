@@ -2,10 +2,10 @@
 	text-align: center;
 }
 
-p,
-h1 {
+.breakable-txt {
 	white-space: pre;
 }
+
 body {
 	display: grid;
 	grid-template-rows: 70px 1fr;
@@ -23,8 +23,6 @@ header {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 
 	color: white;
 }
@@ -43,4 +41,65 @@ p {
 .bg-restaurant {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
 		url("../assets/restaurant.jpg");
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 32px;
+
+	height: 100%;
+	width: 100%;
+}
+
+.menu-title {
+	margin-top: 16px;
+	font-size: 100px;
+	font-style: italic;
+}
+
+.menu-container {
+	display: flex;
+	flex-direction: column;
+
+	width: 60%;
+
+	gap: 32px;
+}
+
+.menu-item {
+	display: grid;
+	grid-template-rows: 80px 200px;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: "title title" "desc img";
+	gap: 8px;
+
+	padding: 16px;
+	background-color: black;
+	border: 6px solid white;
+	border-radius: 4px;
+}
+
+.menu-item-title {
+	grid-area: title;
+	font-size: 48px;
+	border-bottom: 1px solid rgb(62, 62, 62);
+}
+
+.menu-item-desc {
+	grid-area: desc;
+	text-align: left;
+}
+
+.menu-item-img {
+	grid-area: img;
+
+	border: 2px solid white;
 }
