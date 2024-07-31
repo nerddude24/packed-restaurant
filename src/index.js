@@ -1,3 +1,4 @@
+import "./reset.css";
 import "./style.css";
 import Home from "./pages/home";
 import About from "./pages/about";
